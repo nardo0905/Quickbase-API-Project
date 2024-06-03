@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="App" type="Application" factoryName="Application" nameIsGenerated="true">
+    <envs>
+      <env name="GITHUB_TOKEN" value="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" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="org.example.App" />
+    <module name="Quickbase-API-Project" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="org.example.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
