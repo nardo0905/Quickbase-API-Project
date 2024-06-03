@@ -2,7 +2,6 @@ package org.example.api;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
-import com.google.gson.JsonParseException;
 import org.example.model.FreshdeskContact;
 import org.example.model.GitHubUser;
 
@@ -39,7 +38,7 @@ public class FreshdeskAPI {
         return createContact();
     }
 
-    private FreshdeskContact updateContact(FreshdeskContact contact) throws Exception {
+    public FreshdeskContact updateContact(FreshdeskContact contact) throws Exception {
         contact.setName(githubUser.getName());
         contact.setEmail(githubUser.getEmail());
         HttpRequest putRequest = HttpRequest.newBuilder()
@@ -57,6 +56,7 @@ public class FreshdeskAPI {
     }
 
     public FreshdeskContact createContact() throws Exception {
+        // building a new json object, because the contact's id is not known
         JsonObject contact = buildNewContactJson();
         HttpRequest postRequest = HttpRequest.newBuilder()
                 .uri(buildContactsURI())

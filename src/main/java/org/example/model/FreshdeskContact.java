@@ -11,6 +11,12 @@ public class FreshdeskContact {
         this.id = id;
     }
 
+    public FreshdeskContact() {
+        this.name = "";
+        this.email = "";
+        this.id = 0;
+    }
+
     public String getName() {
         return name;
     }

@@ -20,6 +20,7 @@ public class ConsoleLineInterface {
         } catch (Exception e) {
             System.out.println("Failed to connect Github and Freshdesk: " + e.getMessage());
         }
+        scanner.close();
     }
 
     public static String readLine() {

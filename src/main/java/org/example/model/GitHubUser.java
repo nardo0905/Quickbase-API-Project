@@ -9,7 +9,7 @@ public class GitHubUser {
     public GitHubUser(String login, String name, String email, String createdAt) {
         this.login = login;
         this.name = name;
-        created_at = createdAt;
+        this.created_at = createdAt;
         this.email = email;
     }
 
