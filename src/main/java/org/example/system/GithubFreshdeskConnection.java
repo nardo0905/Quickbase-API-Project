@@ -26,7 +26,7 @@ public class GithubFreshdeskConnection {
             FreshdeskAPI freshdeskAPI = new FreshdeskAPI(client, gson, freshdeskSubdomain, githubAPI.getUserInfo());
             return freshdeskAPI.createOrUpdateContact();
         } catch (Exception e) {
-            throw new Exception("Failed to connect to Github: " + e.getMessage());
+            throw new Exception(e.getMessage());
         }
     }
 }
