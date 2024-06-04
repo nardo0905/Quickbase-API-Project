@@ -1,7 +1,8 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="App" type="Application" factoryName="Application" nameIsGenerated="true">
     <envs>
-      <env name="GITHUB_TOKEN" value="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" />
+      <env name="DB_USERNAME" value="root" />
+      <env name="DB_PASSWORD" value="root" />
     </envs>
     <option name="MAIN_CLASS_NAME" value="org.example.App" />
     <module name="Quickbase-API-Project" />
