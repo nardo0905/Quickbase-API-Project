@@ -1,0 +1,2 @@
+The project is built with Maven. All of the dependencies needed are included in pom.xml, so if the project is run correctly with Maven through IntelliJ or another Java IDE it should work out of the box. You have to set GITHUB_TOKEN and FRESHDESK_TOKEN environment variables. DB_USERNAME and DB_PASSWORD are included in the IntelliJ run configuration but you can set your own if you like. The program is meant to be run from the App.java file.
+Unit tests are in the "test" folder. The tests use JUnit and Mockito.
