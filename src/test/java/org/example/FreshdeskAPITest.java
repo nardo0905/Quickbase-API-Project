@@ -18,7 +18,7 @@ import static org.mockito.Mockito.*;
 
 public class FreshdeskAPITest {
 
-    private static final String TEST_SUBDOMAIN = "yourcompany";
+    private static final String TEST_SUBDOMAIN = "company";
     private static final String TEST_TOKEN = "test_token";
     private static final String TEST_EMAIL = "octocat@github.com";
     private static final String TEST_NAME = "The Octocat";
@@ -36,7 +36,6 @@ public class FreshdeskAPITest {
         GitHubUser githubUser = new GitHubUser(TEST_EMAIL, TEST_NAME, TEST_EMAIL, TEST_CREATED_AT);
         freshdeskAPI = new FreshdeskAPI(mockClient, gson, TEST_SUBDOMAIN, githubUser);
 
-        // Set the environment variable for the test
         System.setProperty("FRESHDESK_TOKEN", TEST_TOKEN);
     }
 

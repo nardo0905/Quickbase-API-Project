@@ -25,6 +25,10 @@ public class GitHubUser {
         return email;
     }
 
+    public String getCreatedAt() {
+        return created_at;
+    }
+
     @Override
     public String toString() {
         return "GitHubUser{" +

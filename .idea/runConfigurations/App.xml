@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="App" type="Application" factoryName="Application" nameIsGenerated="true">
     <envs>
-      <env name="GITHUB_TOKEN" value="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" />
+      <env name="GITHUB_TOKEN" value="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" />
     </envs>
     <option name="MAIN_CLASS_NAME" value="org.example.App" />
     <module name="Quickbase-API-Project" />
