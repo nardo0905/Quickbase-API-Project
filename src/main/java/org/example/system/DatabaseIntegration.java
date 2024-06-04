@@ -7,8 +7,8 @@ import java.sql.PreparedStatement;
 
 public class DatabaseIntegration {
     private static final String DATABASE_URL = "jdbc:mariadb://localhost:3306/githubAPI";
-    private static final String DATABASE_USERNAME = "root";
-    private static final String DATABASE_PASSWORD = "root";
+    private static final String DATABASE_USERNAME = System.getenv("DB_USERNAME");
+    private static final String DATABASE_PASSWORD = System.getenv("DB_PASSWORD");
 
     private Connection connection;
 
